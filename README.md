@@ -1,22 +1,80 @@
-# hire_craft
+# 💼 HireCraft
 
-HireCraft is a Flutter resume builder with AI generation, ATS scoring, templates, and export.
+> Build Smarter Resumes with AI.
 
-## Run with AI backend
+HireCraft is an AI-powered resume builder built with Flutter.  
+It helps users generate professional, ATS-friendly resumes quickly and efficiently using intelligent automation.
 
-This app expects an AI backend URL through dart define:
+---
 
-```bash
-flutter run --dart-define=AI_BACKEND_URL=http://YOUR_BACKEND_HOST:8080
-```
+## ✨ Features
 
-### Important security note
+- 🤖 AI-assisted resume generation
+- 📄 Professional resume structure
+- 🎨 Clean and modern UI
+- ⚡ Optimized performance
+- 📱 Cross-platform support
+- 🔐 Secure backend integration (Supabase)
 
-- Never commit AI provider API keys to this repository.
-- Keep provider keys in backend environment variables only.
+---
 
-## Groq integration guide
+## 🛠 Tech Stack
 
-Step-by-step backend + app integration is documented here:
+- Flutter
+- Dart
+- Supabase (Authentication & Database)
+- Material 3 Design System
 
-- [docs/groq_backend_integration.md](docs/groq_backend_integration.md)
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+
+git clone https://github.com/arijeetdas/hirecraft.git  
+cd hirecraft
+
+### 2. Install dependencies
+
+flutter pub get
+
+### 3. Configure Environment Variables
+
+Run the app with your Supabase credentials:
+
+flutter run --dart-define=SUPABASE_URL=YOUR_SUPABASE_URL --dart-define=SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+
+---
+
+## 🎯 Vision
+
+HireCraft simplifies resume creation through intelligent automation and elegant design, helping users present themselves professionally with minimal effort.
+
+---
+
+## 📌 Version
+
+Current Version: 1.0.2  
+Release Type: Stable  
+
+---
+
+## 🔒 Backend Setup
+
+To enable authentication and database features:
+
+- Create a Supabase project
+- Add your project URL and anon key
+- Enable Google authentication (optional)
+
+---
+
+## 🤝 Contributing
+
+Pull requests, issues, and feature suggestions are welcome.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
